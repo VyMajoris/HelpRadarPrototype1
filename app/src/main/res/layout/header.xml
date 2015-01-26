@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/polyback"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="#85000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/drawer_grouping_padding"
+        android:paddingLeft="@dimen/drawer_left"
+        android:paddingRight="@dimen/drawer_right"
+        android:paddingTop="@dimen/drawer_top">
+
+
+        <br.com.vymajoris.helpradarprototype1.ui.AccountImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/headerText"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/account_image"
+            app:maskDrawable="@drawable/circle_mask"
+            android:id="@+id/account_image"/>
+
+
+        <LinearLayout
+            android:id="@+id/headerText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drawer_header_text"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:id="@+id/header_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:id="@+id/header_email"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
